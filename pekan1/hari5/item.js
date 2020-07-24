@@ -25,7 +25,7 @@ function itemCard(item) {
             <h5 class="card-title" id="${item[1]}">${item[1]}</h5>
             <p class="card-text" id="${item[3]}">${item[3]}</p>
             <p class="card-text">Rp ${item[2]}</p>
-            <a href="#" class="btn btn-primary" id="addCart">Tambahkan ke keranjang</a>
+            <a href="#" class="btn btn-primary" id="addCart" onClick = "addCart()">Tambahkan ke keranjang</a>
         </div>
     </div>`;
 }
