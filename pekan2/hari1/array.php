@@ -70,33 +70,37 @@
             Status: "Alive"
             
         */
-        $people = [
-            [
-                "Will Byers",
-                12,
-                "Will the Wise",
-                "Alive"
-            ],
-            [
-                "Mike Wheeler",
-                12,
-                "Dungeon Master",
-                "Alive"
-            ],
-            [
-                "Jim Hopper",
-                43,
-                "Chief Hopper",
-                "Deceaased"
-            ],
-            [
-                "Eleven",
-                12,
-                "El",
-                "Alive"
-            ]
-        ];
         
+        
+        $orang1 = [
+            "Name"=> "Will Byers",
+            "Age"=> 12,
+            "Aliases"=> "Will the Wise",
+            "Status"=> "Alive"
+
+        ];
+
+        $orang2 =[
+            "Name" => "Mike Wheeler",
+            "Age" => 12,
+            "Aliases" => "Dungeon Master",
+            "Status" => "Alive"
+        ];
+
+        $orang3 =[
+            "Name" =>  "Jim Hopper",
+            "Age" =>  43,
+            "Aliases" =>  "Chief Hopper",
+            "Status" =>  "Deceased"
+        ];
+
+        $orang4 =[
+            "Name" =>  "Eleven",
+            "Age" =>  12,
+            "Aliases" =>  "El",
+            "Status" =>  "Alive"
+        ];
+
     ?>
 </body>
 </html>
