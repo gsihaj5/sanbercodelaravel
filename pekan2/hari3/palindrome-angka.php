@@ -1,8 +1,22 @@
 <?php
+    function palindrome($str){
+        if(strrev($str) == $str){
+            return true;
+        }
+        return false;
+
+    }
 
 function palindrome_angka($angka) {
-  // tulis kode di sini
+    echo"$angka -> ";
+    if($angka > 0 && $angka <= 8){
+        return ++$angka . "<br>";
+    }
 
+    while(!palindrome($angka)){
+        $angka++;
+    }
+    return $angka ."<br>";
 }
 
 // TEST CASES
