@@ -1,8 +1,8 @@
 <?php
 class Animal{
-    private $legs = 2;
-    private $name;
-    private $cold_blooded = false;
+    protected $legs = 2;
+    protected $name;
+    protected $cold_blooded = false;
 
     public function __construct($name){
         $this -> setName($name);
