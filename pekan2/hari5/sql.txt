@@ -1,0 +1,60 @@
+1. CREATE DATABASE myshop; 
+
+2. CREATE TABLE ===============================
+
+CREATE TABLE users (
+    id int primary key AUTO_INCREMENT,
+    name varchar(255),
+    email varchar(255),
+    password varchar(255)
+); 
+
+    CREATE TABLE items (
+    id int primary key AUTO_INCREMENT,
+    name varchar(255),
+    description varchar(255),
+    price varchar(255),
+    stock varchar(255),
+    category_id varchar(255)
+); 
+
+    CREATE TABLE categories (
+    id int primary key AUTO_INCREMENT,
+    name varchar(255)
+); 
+
+3 INSERT DATA ===============================
+insert into users 
+(name, email, password) value ("John Doe", "john@doe.com", "john123");
+
+insert into users 
+(name, email, password) value ("Jane Doe", "jane@doe.com", "jenita123");
+
+
+insert into categories (name) value  ("gadget")
+insert into categories (name) value  ("cloth")
+insert into categories (name) value  ("men")
+insert into categories (name) value  ("women")
+insert into categories (name) value  ("branded")
+
+insert into items 
+(name, description, price, stock, category_id) value  ("Sumsang b50", "hape keren dari brand sumsang", "4000000", "100", "1")
+
+insert into items 
+(name, description, price, stock, category_id) value  ("Uniklooh", "baju keren dari brand ternama", "500000", "50", "2")
+
+insert into items 
+(name, description, price, stock, category_id) value  ("IMHO Watch", "jam tangan anak yang jujur banget", "2000000", "10", "1")
+
+4 MENGAMBIL DATA ============================
+SELECT id, name, email FROM `users`
+
+SELECT * FROM `items` where price > 1000000 
+SELECT * FROM `items` where name like "%uniklo%"
+
+SELECT * FROM items join categories on category_id=categories.id 
+
+5 UPDATE ===================================
+update items
+set price = "2500000"
+where name like "%Sumsang%"
