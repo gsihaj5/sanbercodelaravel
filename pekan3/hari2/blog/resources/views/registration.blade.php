@@ -7,15 +7,16 @@
     <body>
         <h1>Buat Account Baru!</h1>
         <h4>Sign Up Form</h4>
-        <form action = "welcome.html">
+        <form action = "/welcome" method = "POST">
+            @csrf
             <div>
                 First Name: <br />
-                <input type="text" />
+                <input type="text" name = "first_name"/>
             </div>
 
             <div>
                 Last Name: <br />
-                <input type="text" />
+                <input type="text" name = "last_name" />
             </div>
 
             <div>
