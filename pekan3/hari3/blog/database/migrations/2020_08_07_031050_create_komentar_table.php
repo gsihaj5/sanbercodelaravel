@@ -16,8 +16,6 @@ class CreateKomentarTable extends Migration
         Schema::create('komentar', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('isi');
-            $table->timestamps('tanggal_dibuat');
-            $table->timestamps('pemberi_komentar_id');
             $table->timestamps();
         });
     }

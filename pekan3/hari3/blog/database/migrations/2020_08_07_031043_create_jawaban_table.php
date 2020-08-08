@@ -15,12 +15,10 @@ class CreateJawabanTable extends Migration
     {
         Schema::create('jawaban', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->timestamps();
+            //$table->timestamps();
             $table->string('isi');
-            $table->timestamps('tanggal_dibuat');
-            $table->timestamps('tanggal_diperbarui');
-            $table->int('jumlah_like');
-            $table->int('jumlah)_dislike');
+            $table->integer('jumlah_like');
+            $table->integer('jumlah_dislike');
         });
     }
 

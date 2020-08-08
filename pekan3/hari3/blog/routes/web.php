@@ -11,11 +11,6 @@
 |
 */
 
-//Route::get('/', 'HomeController@index')->name('index');
-//Route::get('/register', 'AuthController@index')->name('index');
-
-//Route::get('/welcome', 'WelcomeController@index')->name('index');
-//Route::post('/welcome', 'WelcomeController@index')->name('index');
 Route::get('/master', function(){
     return view('/adminlte/master');
 });
@@ -24,6 +19,19 @@ Route::get('/', function(){
     return view('tasks/index');
 });
 
+Route::get('/pertanyaan', "PertanyaanController@index");
+Route::post('/pertanyaan', "PertanyaanController@store");
+Route::get('/pertanyaan/create', "PertanyaanController@create");
+
+Route::get('/pertanyaan/{pertanyaan_id}', "PertanyaanController@show");
+Route::get('/pertanyaan/{pertanyaan_id}/edit', "PertanyaanController@edit");
+Route::put('/pertanyaan/{pertanyaan_id}', "PertanyaanController@update");
+
+Route::delete('/pertanyaan/{pertanyaan_id}', "PertanyaanController@destroy");
+
+
 Route::get('/data-tables', function(){
     return view('dataTables/index');
 });
+
+

@@ -17,11 +17,8 @@ class CreatePertanyaanTable extends Migration
             $table->bigIncrements('id');
             $table->string('judul');
             $table->string('isi');
-            $table->timestamps('tanggal_dibuat');
-            $table->timestamps('tanggal_diperbarui');
-            $table->int('jumlah_like');
-            $table->int('jumlah)_dislike');
-            $table->timestamps();
+            $table->integer('jumlah_like')-> default(0);
+            $table->integer('jumlah_dislike') -> default(0);
         });
     }
 
